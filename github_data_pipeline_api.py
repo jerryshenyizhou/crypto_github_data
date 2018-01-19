@@ -48,6 +48,14 @@ def coin_github_org_ingestion():
     return data
 
 
+# ingest coin github exclude data
+def coin_github_exclusion_ingestion():
+    sheet_key = '1tpOAiuRo9RNKnyPCVTGjc3H9S1miIJD1AimFLg8sv4E'
+    tab = 'excluding_repos'
+    data = get_googlesheet_data(sheet_key, tab)
+    return data
+
+
 # In[5]:
 
 
@@ -117,8 +125,8 @@ def get_full_contribution_history(coin_github_repo_data):
                 "https://api.github.com/repos/" + repo_name + "/stats/contributors?sort=total&direction=desc&per_page=100"))
             data_repo_contributors['repo_full_name'] = repo_name
             data_repo_contributors = \
-            data_repo_contributors.dropna(subset=['author.login']).set_index(['repo_full_name', 'author.login'])[
-                ['weeks']]
+                data_repo_contributors.dropna(subset=['author.login']).set_index(['repo_full_name', 'author.login'])[
+                    ['weeks']]
             data_repo_contributors = data_repo_contributors.weeks.apply(pd.Series)
             data_repo_contributors = pd.DataFrame(data_repo_contributors.stack())[0].apply(pd.Series)
             data_repo_contributors = data_repo_contributors[data_repo_contributors.c > 0]
@@ -193,8 +201,8 @@ def update_contribution_history(data_contributions_entry_existing, coin_github_r
                 "https://api.github.com/repos/" + repo_name + "/stats/contributors?sort=total&direction=desc&per_page=100"))
             data_repo_contributors['repo_full_name'] = repo_name
             data_repo_contributors = \
-            data_repo_contributors.dropna(subset=['author.login']).set_index(['repo_full_name', 'author.login'])[
-                ['weeks']]
+                data_repo_contributors.dropna(subset=['author.login']).set_index(['repo_full_name', 'author.login'])[
+                    ['weeks']]
             data_repo_contributors = data_repo_contributors.weeks.apply(pd.Series)
             data_repo_contributors = pd.DataFrame(data_repo_contributors.stack())[0].apply(pd.Series)
             data_repo_contributors = data_repo_contributors[data_repo_contributors.c > 0]
@@ -222,6 +230,8 @@ def update_contribution_history(data_contributions_entry_existing, coin_github_r
         (~data_contributions_entry_existing.repo_full_name.isin(repo_update_list)) &
         (data_contributions_entry_existing.commits > 0)].append(data_contributions_entry)
     data_contributions_entry_updated.week = pd.to_datetime(data_contributions_entry_updated.week)
+    data_contributions_entry_updated = data_contributions_entry_updated[
+        data_contributions_entry_updated.week >= datetime.date(2009, 1, 1)]
     return data_contributions_entry_updated
 
 
@@ -233,12 +243,13 @@ def update_contribution_history(data_contributions_entry_existing, coin_github_r
 coin_github_org_data = coin_github_org_ingestion()
 coin_marketcap_data = coin_marketcap_ingestion()
 coin_github_repo_data = github_repo_ingestion(coin_github_org_data)
+coin_github_exclude_data = coin_github_exclusion_ingestion()
 coin_gap_list = update_no_org_coins(coin_github_org_data, coin_marketcap_data)
 
 # update contribution data from existing file
 data_contributions_entry_existing = pd.DataFrame.from_csv('./data/latest_data/top_coin_repo_contributions_entry.csv')
 data_contributions_entry = update_contribution_history(data_contributions_entry_existing, coin_github_repo_data)
-
+data_contributions_entry = data_contributions_entry[~data_contributions_entry.repo_full_name.isin(coin_github_exclude_data.repo_full_name)]
 # pull from scratch
 # data_contributions_entry = get_full_contribution_history(coin_github_repo_data)
 

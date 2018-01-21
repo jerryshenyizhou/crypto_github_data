@@ -265,3 +265,5 @@ pd.DataFrame.to_csv(data_contributions_entry, './data/latest_data/top_coin_repo_
 # archiving just token contribution data
 pd.DataFrame.to_csv(data_contributions_entry,
                     './data/archive_data/top_coin_repo_contributions_entry_' + str(today) + '.csv')
+
+print 'finished github_data_pipeline! UTC time:'+str(datetime.datetime.today())

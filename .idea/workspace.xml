@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de780b15-83d6-410c-9d32-20c238260157" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/cd crypto_data_project.sh" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/crypto_data_project.sh" afterPath="$PROJECT_DIR$/crypto_data_project.sh" />
+      <change beforePath="$PROJECT_DIR$/github_data_pipeline_api.py" afterPath="$PROJECT_DIR$/github_data_pipeline_api.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +18,8 @@
       <file leaf-file-name="github_data_pipeline_api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/github_data_pipeline_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3825">
-              <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+            <state relative-caret-position="338">
+              <caret line="258" column="0" lean-forward="true" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
               <folding>
                 <element signature="e#28#43#0" expanded="true" />
               </folding>
@@ -25,12 +27,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_sheet_update.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crypto_data_project.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="58" lean-forward="true" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_sheet_update.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/google_sheet_update.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding>
+                <element signature="e#20#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,6 +69,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/github_data_pipeline_api.py" />
+        <option value="$PROJECT_DIR$/crypto_data_project.sh" />
       </list>
     </option>
   </component>
@@ -197,20 +212,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/google_sheet_update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#20#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/github_data_pipeline_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+        <state relative-caret-position="338">
+          <caret line="258" column="0" lean-forward="true" selection-start-line="258" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
           <folding>
             <element signature="e#28#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/google_sheet_update.py">
+    <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="45">
+          <caret line="3" column="58" lean-forward="true" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
           <folding />
         </state>
       </provider>

@@ -3,14 +3,14 @@
 # In[3]:
 
 
-import numpy as np
-import pandas as pd
-# import seaborn as sns
 import matplotlib
-matplotlib.use('Agg')
-# sns.set()
-from matplotlib import pyplot as plt
+import pandas as pd
 
+matplotlib.use('Agg')
+
+from matplotlib import pyplot as plt
+import seaborn as sns
+sns.set()
 import datetime
 
 
@@ -134,9 +134,11 @@ today = datetime.date.today()
 coin_marketcap_data = pd.DataFrame.from_csv('./data/latest_data/coin_marketcap_data.csv')
 coin_github_repo_data = pd.DataFrame.from_csv('./data/latest_data/top_coin_repo_list.csv', index_col=None)
 data_contributions_entry = pd.DataFrame.from_csv('./data/latest_data/top_coin_repo_contributions_entry.csv')
+# filtering out unrelated repos manually
 data_contributions_entry = data_contributions_entry[
     ~data_contributions_entry.repo_full_name.isin(['input-output-hk/nixpkgs'])]
-
+# filtering out bot commits
+data_contributions_entry = data_contributions_entry[~data_contributions_entry.login.str[-3:].str.contains('bot')]
 # In[ ]:
 
 

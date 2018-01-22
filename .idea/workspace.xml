@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de780b15-83d6-410c-9d32-20c238260157" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/telegram_bot.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/github_data_process.py" afterPath="$PROJECT_DIR$/github_data_process.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +40,8 @@
       <file leaf-file-name="github_data_process.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/github_data_process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="362">
+              <caret line="187" column="18" lean-forward="true" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
               <folding>
                 <element signature="e#28#45#0" expanded="true" />
               </folding>
@@ -47,13 +49,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="google_sheet_update.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/google_sheet_update.py">
+      <file leaf-file-name="telegram_bot.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/telegram_bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding>
-                <element signature="e#20#34#0" expanded="true" />
+                <element signature="e#28#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,13 +87,14 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/crypto_data_project.sh" />
         <option value="$PROJECT_DIR$/github_data_pipeline_api.py" />
+        <option value="$PROJECT_DIR$/telegram_bot.py" />
         <option value="$PROJECT_DIR$/github_data_process.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="79" />
-    <option name="y" value="50" />
+    <option name="x" value="93" />
+    <option name="y" value="43" />
     <option name="width" value="1201" />
     <option name="height" value="676" />
   </component>
@@ -134,6 +137,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -167,7 +173,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="50" width="1201" height="676" extended-state="0" />
+    <frame x="93" y="43" width="1201" height="676" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2406328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -230,24 +236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/google_sheet_update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/github_data_pipeline_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="921">
@@ -258,10 +246,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/google_sheet_update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#20#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telegram_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#28#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/github_data_process.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="362">
+          <caret line="187" column="18" lean-forward="true" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
           <folding>
             <element signature="e#28#45#0" expanded="true" />
           </folding>

@@ -10,6 +10,7 @@ matplotlib.use('Agg')
 
 from matplotlib import pyplot as plt
 import seaborn as sns
+
 sns.set()
 import datetime
 
@@ -142,7 +143,7 @@ data_contributions_entry = data_contributions_entry[~data_contributions_entry.lo
 # In[ ]:
 
 
-# In[53]:
+# main function
 
 
 token_class = TokenAnalyzer(contribution_data=data_contributions_entry,
@@ -152,38 +153,42 @@ token_class = TokenAnalyzer(contribution_data=data_contributions_entry,
 # In[64]:
 
 
-# Generate last week commit 
+# Generate last week commit
 fig = plt.figure()
-token_class.get_commit_leaderboard(dimension=['repo_full_name'], limit=20).sort_values().plot(kind='barh',
-                                                                                              title='last_week_top_committed_repo\nAs of: ' + str(
-                                                                                                  datetime.date.today()))
-plt.xlabel('commits')
-plt.ylabel('repo')
-plt.tight_layout()
-fig.savefig('./data/pictures/last_week_top_committed_repo.png')
-
-# In[66]:
-
-
-# Generate last week commit 
-fig = plt.figure()
-token_class.get_commit_leaderboard(dimension=['symbol'], limit=20).sort_values().plot(kind='barh',
-                                                                                      title='last_week_top_committed_token\nAs of: ' + str(
-                                                                                          datetime.date.today()))
+last_week_token_commit = token_class.get_commit_leaderboard(dimension=['symbol'], limit=20).sort_values()
+last_week_token_commit.plot(kind='barh',
+                            title='last_week_top_committed_token\nAs of: ' + str(datetime.date.today()))
 plt.xlabel('commits')
 plt.ylabel('token')
 plt.tight_layout()
 fig.savefig('./data/pictures/last_week_top_committed_token.png')
 
-# In[67]:
+# Generate last week commit
 
-
-# Generate last week commit 
 fig = plt.figure()
-token_class.get_commit_leaderboard(dimension=['developer'], limit=20).sort_values().plot(kind='barh',
-                                                                                         title='last_week_top_committed_developer\nAs of: ' + str(
-                                                                                             datetime.date.today()))
+last_week_repo_commit = token_class.get_commit_leaderboard(dimension=['repo_full_name'], limit=20).sort_values()
+last_week_repo_commit.plot(kind='barh',
+                           title='last_week_top_committed_repo\nAs of: ' + str(datetime.date.today()))
+plt.xlabel('commits')
+plt.ylabel('repo')
+plt.tight_layout()
+fig.savefig('./data/pictures/last_week_top_committed_repo.png')
+link = 'www.github.com/' + last_week_repo_commit.sort_values(ascending=False).index
+link_string = "\n".join(link)
+with open("./data/pictures/last_week_top_committed_repo.txt", "w") as text_file:
+    text_file.write(link_string)
+
+# Generate last week commit
+fig = plt.figure()
+last_week_developer_commit = token_class.get_commit_leaderboard(dimension=['developer'], limit=20).sort_values()
+last_week_developer_commit.plot(kind='barh',
+                                title='last_week_top_committed_developer\nAs of: '+str(datetime.date.today()))
 plt.xlabel('commits')
 plt.ylabel('developer')
 plt.tight_layout()
 fig.savefig('./data/pictures/last_week_top_committed_developer.png')
+link = 'www.github.com/'+last_week_developer_commit.sort_values(ascending=False).index
+link_string = "\n".join(link)
+with open("./data/pictures/last_week_top_committed_developer.txt", "w") as text_file:
+    text_file.write(link_string)
+

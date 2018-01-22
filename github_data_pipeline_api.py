@@ -239,6 +239,7 @@ def update_contribution_history(data_contributions_entry_existing, coin_github_r
 
 
 # main function, update
+print 'start github_data_pipeline! UTC time: '+str(datetime.datetime.today())
 
 coin_github_org_data = coin_github_org_ingestion()
 coin_marketcap_data = coin_marketcap_ingestion()
@@ -266,4 +267,4 @@ pd.DataFrame.to_csv(data_contributions_entry, './data/latest_data/top_coin_repo_
 pd.DataFrame.to_csv(data_contributions_entry,
                     './data/archive_data/top_coin_repo_contributions_entry_' + str(today) + '.csv')
 
-print 'finished github_data_pipeline! UTC time:'+str(datetime.datetime.today())
+print 'finished github_data_pipeline! UTC time: '+str(datetime.datetime.today())

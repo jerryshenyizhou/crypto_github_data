@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de780b15-83d6-410c-9d32-20c238260157" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/telegram_bot_staging.py" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/crypto_data_project.sh" afterPath="$PROJECT_DIR$/crypto_data_project.sh" />
-      <change beforePath="$PROJECT_DIR$/telegram_bot.py" afterPath="$PROJECT_DIR$/telegram_bot.py" />
+      <change beforePath="$PROJECT_DIR$/crypto_data_project_staging.sh" afterPath="$PROJECT_DIR$/crypto_data_project_staging.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="crypto_data_project_staging.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crypto_data_project_staging.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,8 +73,8 @@
         <option value="$PROJECT_DIR$/github_data_process.py" />
         <option value="$PROJECT_DIR$/telegram_bot.py" />
         <option value="$PROJECT_DIR$/telegram_bot_staging.py" />
-        <option value="$PROJECT_DIR$/crypto_data_project.sh" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/crypto_data_project.sh" />
         <option value="$PROJECT_DIR$/crypto_data_project_staging.sh" />
       </list>
     </option>
@@ -264,14 +261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/github_data_process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -282,10 +271,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crypto_data_project_staging.sh">
+    <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_data_project_staging.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>

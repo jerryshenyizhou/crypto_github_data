@@ -14,7 +14,7 @@ warnings.filterwarnings('ignore')
 
 bot = telegram.Bot(token='527120092:AAFxZMzHNfk9OZYPlLmq60vPB8SIFojrm0M')
 
-chat_id_list = [216612117,-286032007]
+chat_id_list = [216612117]
 
 # In[ ]:
 

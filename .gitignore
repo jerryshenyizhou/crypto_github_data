@@ -6,3 +6,6 @@
 *.pyc
 .idea/*
 *.txt
+*.log
+*.png
+

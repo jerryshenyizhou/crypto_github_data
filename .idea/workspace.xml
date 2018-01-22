@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de780b15-83d6-410c-9d32-20c238260157" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/telegram_bot.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/telegram_bot_staging.py" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/github_data_process.py" afterPath="$PROJECT_DIR$/github_data_process.py" />
+      <change beforePath="$PROJECT_DIR$/crypto_data_project.sh" afterPath="$PROJECT_DIR$/crypto_data_project.sh" />
+      <change beforePath="$PROJECT_DIR$/telegram_bot.py" afterPath="$PROJECT_DIR$/telegram_bot.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,36 +17,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="github_data_pipeline_api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/github_data_pipeline_api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="921">
-              <caret line="244" column="3" lean-forward="false" selection-start-line="244" selection-start-column="3" selection-end-line="244" selection-end-column="3" />
-              <folding>
-                <element signature="e#28#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="crypto_data_project.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="github_data_process.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/github_data_process.py">
+      <file leaf-file-name="crypto_data_project_staging.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crypto_data_project_staging.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="187" column="18" lean-forward="true" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
-              <folding>
-                <element signature="e#28#45#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="telegram_bot_staging.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/telegram_bot_staging.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            <state relative-caret-position="270">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -84,17 +72,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/crypto_data_project.sh" />
         <option value="$PROJECT_DIR$/github_data_pipeline_api.py" />
-        <option value="$PROJECT_DIR$/telegram_bot.py" />
         <option value="$PROJECT_DIR$/github_data_process.py" />
+        <option value="$PROJECT_DIR$/telegram_bot.py" />
+        <option value="$PROJECT_DIR$/telegram_bot_staging.py" />
+        <option value="$PROJECT_DIR$/crypto_data_project.sh" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/crypto_data_project_staging.sh" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="93" />
-    <option name="y" value="43" />
+    <option name="x" value="18" />
+    <option name="y" value="49" />
     <option name="width" value="1201" />
     <option name="height" value="676" />
   </component>
@@ -173,7 +163,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="93" y="43" width="1201" height="676" extended-state="0" />
+    <frame x="18" y="49" width="1201" height="676" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2406328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -228,32 +218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/github_data_pipeline_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="244" column="3" lean-forward="false" selection-start-line="244" selection-start-column="3" selection-end-line="244" selection-end-column="3" />
-          <folding>
-            <element signature="e#28#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="58" lean-forward="false" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/google_sheet_update.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-403">
@@ -274,13 +238,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/telegram_bot_staging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/github_data_pipeline_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="904">
+          <caret line="244" column="3" lean-forward="false" selection-start-line="244" selection-start-column="3" selection-end-line="244" selection-end-column="3" />
+          <folding>
+            <element signature="e#28#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_data_project.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/github_data_process.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
-          <caret line="187" column="18" lean-forward="true" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
+          <caret line="187" column="18" lean-forward="false" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
           <folding>
             <element signature="e#28#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crypto_data_project_staging.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

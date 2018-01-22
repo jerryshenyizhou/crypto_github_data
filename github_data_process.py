@@ -6,9 +6,11 @@
 import numpy as np
 import pandas as pd
 # import seaborn as sns
-
+import matplotlib
+matplotlib.use('Agg')
 # sns.set()
 from matplotlib import pyplot as plt
+
 import datetime
 
 
